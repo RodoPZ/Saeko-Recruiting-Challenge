@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Piedra, papel o tijera</h1>
+    </header>
+    <main>
+      <div class="board">
+        <div class="score">
+          <div class="score__container">
+            <p class="score__title score__player" id="marcadorPlayer">0</p>
+            <p class="score__title">-</p>
+            <p class="score__title score__computer" id="marcadorComputer">0</p>
+          </div>
+          <p>marcador</p>
+        </div>
+        <div class="board__sideLeft">
+          <div class="board__titleContainer">
+            <h2>Tu</h2>
+            <p id="instructions" class="board__subtitle">
+              Selecciona una opción
+            </p>
+          </div>
+          <div class="board__options" id="options">
+            <img
+              id="Papel"
+              class="board__optionImg"
+              src="./assets/Papel.svg"
+              alt="papel"
+            />
+            <img
+              id="Piedra"
+              class="board__optionImg"
+              src="./assets/Piedra.svg"
+              alt="piedra"
+            />
+            <img
+              id="Tijeras"
+              class="board__optionImg"
+              src="./assets/Tijeras.svg"
+              alt="tijeras"
+            />
+          </div>
+        </div>
+        <div id="selectionLeft" class="selectionLeft"></div>
+        <div id="results" class="results"></div>
+        <div id="selectionRight" class="selectionRight"></div>
+        <div class="board__sideRight">
+          <h2 class="board__titleContainer">Computadora</h2>
+
+          <img class="board__optionImg" src="./assets/Papel.svg" alt="papel" />
+          <img
+            class="board__optionImg"
+            src="./assets/Piedra.svg"
+            alt="piedra"
+          />
+          <img
+            class="board__optionImg"
+            src="./assets/Tijeras.svg"
+            alt="tijeras"
+          />
+        </div>
+      </div>
+
+      <div></div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
